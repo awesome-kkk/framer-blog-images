@@ -1,0 +1,35 @@
+{
+ "title": "Framer 반응형 디자인: Breakpoint로 PC·태블릿·모바일 화면 만들기",
+ "tags": [
+  "framer",
+  "프레이머",
+  "framer 반응형",
+  "breakpoint",
+  "반응형 웹"
+ ],
+ "schedule": "2026-11-16 (월) 09:00",
+ "category": "Framer 기초",
+ "html": "<p><img data-img=\"images/08_thumbnail.png\" alt=\"Framer 반응형 디자인 Breakpoint 썸네일\"></p>\n<p>지난주에 만든 Hero 섹션을 휴대폰으로 열어 본 적 있나요? 데스크톱에서는 멋졌는데, 작은 화면에서는 제목이 너무 크고 버튼이 옆으로 삐져나와 있었을 거예요. 저도 처음 만든 페이지를 친구에게 보여 줬다가 \"폰으로 보니까 깨져\"라는 말을 들었어요.</p>\n<p>이번 글에서는 Framer에서 화면 크기별로 디자인을 다르게 만드는 <strong>Breakpoint</strong>가 무엇인지, 어떻게 추가하고 쓰는지 정리할게요. 이 개념만 잡으면 다음 글의 모바일 실습이 훨씬 쉬워져요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>1. 반응형 디자인이란?</b></h3>\n<p>반응형 디자인은 <strong>보는 화면 크기에 맞춰 레이아웃이 알아서 바뀌는 디자인</strong>이에요. 같은 페이지라도 PC에서는 가로로 넓게, 휴대폰에서는 세로로 길게 보여 주는 식이죠.</p>\n<p>요즘은 블로그나 랜딩 페이지 방문자의 절반 이상이 휴대폰으로 들어와요. 그래서 모바일 화면을 따로 챙기지 않으면 방문자 절반에게 깨진 페이지를 보여 주는 셈이에요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>2. Breakpoint는 화면 크기의 기준점</b></h3>\n<p><img data-img=\"images/08_three_sizes.png\" alt=\"Framer 기본 Breakpoint 세 가지: Desktop 1200, Tablet 810, Phone 390\"></p>\n<p>Breakpoint는 \"이 너비부터는 이 디자인을 보여 줘\"라고 정하는 <strong>기준선</strong>이에요. Framer는 처음에 아래 세 가지를 기본으로 제안해요.</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\" data-ke-align=\"alignLeft\" data-ke-style=\"style4\"><tbody><tr><td><b>Breakpoint</b></td><td><b>기준 너비</b></td><td><b>적용되는 화면</b></td></tr><tr><td>Desktop</td><td>1200px</td><td>노트북, 모니터</td></tr><tr><td>Tablet</td><td>810px</td><td>태블릿, 작은 노트북 창</td></tr><tr><td>Phone</td><td>390px</td><td>휴대폰</td></tr></tbody></table>\n<p>캔버스에 이 세 화면이 나란히 놓이고, 각각 따로 손볼 수 있어요. 숫자는 바꿀 수 있지만, 처음에는 기본값 그대로 쓰는 걸 추천해요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>3. Breakpoint 추가하기</b></h3>\n<p><img data-img=\"images/08_add_breakpoint.png\" alt=\"Desktop 페이지에 Breakpoint를 추가하는 순서\"></p>\n<p><strong>Step 1 :</strong> 캔버스에서 Desktop 페이지를 선택해요.</p>\n<p><strong>Step 2 :</strong> 페이지 이름 옆의 <strong>+ (Add Breakpoint)</strong> 버튼을 눌러요.</p>\n<p><strong>Step 3 :</strong> 목록에서 <strong>Tablet</strong>을 고르고, 같은 방법으로 <strong>Phone</strong>도 추가해요.</p>\n<p>추가하면 Desktop 오른쪽에 Tablet, Phone 화면이 생기고, 안에는 Desktop과 같은 내용이 그대로 들어 있어요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>4. 가장 중요한 규칙: 위에서 아래로 내려가요</b></h3>\n<p><img data-img=\"images/08_inherit.png\" alt=\"Primary에서 바꾼 값은 아래로 전달되고, 작은 화면에서 바꾼 값은 그 화면에만 남는 구조\"></p>\n<p>Breakpoint에서 꼭 기억할 규칙이 하나 있어요.</p>\n<ul>\n<li><strong>Desktop(Primary)에서 바꾼 내용</strong>은 Tablet, Phone에도 같이 반영돼요.</li>\n<li><strong>Tablet이나 Phone에서 바꾼 내용</strong>은 그 화면에만 적용돼요. 이걸 <strong>오버라이드(Override)</strong>라고 불러요.</li>\n</ul>\n<p>예를 들어 Desktop에서 제목 문구를 바꾸면 세 화면 모두 바뀌지만, Phone에서 제목 크기를 줄이면 Phone에서만 작아져요. 그래서 <strong>내용은 Desktop에서, 크기와 배치는 작은 화면에서</strong> 고치는 습관을 들이면 편해요.</p>\n<blockquote data-ke-style=\"style3\">\n<p>📌 중요<br />\n작은 화면에서 바꾼 속성은 오른쪽 패널에서 다른 색으로 표시돼요. 원래대로 돌리고 싶으면 그 속성을 우클릭해서 초기화하면 돼요.</p>\n</blockquote>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>5. 화면별로 주로 바꾸는 것들</b></h3>\n<p><img data-img=\"images/08_checklist.png\" alt=\"Tablet과 Phone에서 주로 조정하는 다섯 가지 항목\"></p>\n<p>처음엔 무엇을 바꿔야 할지 막막한데, 실제로는 아래 다섯 가지가 대부분이에요.</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\" data-ke-align=\"alignLeft\" data-ke-style=\"style4\"><tbody><tr><td><b>항목</b></td><td><b>Desktop</b></td><td><b>Phone 예시</b></td></tr><tr><td>글자 크기</td><td>제목 64px</td><td>제목 36px</td></tr><tr><td>Stack 방향</td><td>가로</td><td>세로</td></tr><tr><td>Padding</td><td>위아래 120</td><td>위아래 64</td></tr><tr><td>이미지 너비</td><td>최대 960px</td><td>Fill</td></tr><tr><td>보이기·숨기기</td><td>장식 이미지 표시</td><td>숨김</td></tr></tbody></table>\n<p><a href=\"https://youniyoon.tistory.com/4\">4화</a>에서 Stack과 Fill을 잘 써 뒀다면 이 중 절반은 이미 알아서 맞춰져 있을 거예요. <a href=\"https://youniyoon.tistory.com/7\">7화</a>에서 \"전부 Fixed로 두지 말자\"고 한 이유가 바로 여기 있어요.</p>\n<blockquote data-ke-style=\"style3\">\n<p>⚠️ 주의<br />\nPhone 화면에서 요소를 드래그로 옮기기 시작하면 Desktop과 구조가 달라져서 관리가 어려워져요. 위치는 되도록 Stack 설정으로만 바꿔 주세요.</p>\n</blockquote>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>6. 추천 작업 순서</b></h3>\n<p>Breakpoint 작업은 순서만 지켜도 헷갈릴 일이 크게 줄어요. 제가 쓰는 순서는 이래요.</p>\n<p><strong>Step 1 :</strong> Desktop에서 내용과 구조를 <strong>끝까지 완성</strong>해요. 문구, 이미지, Stack 구조를 이때 다 정해요.</p>\n<p><strong>Step 2 :</strong> Tablet, Phone Breakpoint를 추가해요.</p>\n<p><strong>Step 3 :</strong> Phone부터 열어서 <strong>글자 크기 → Stack 방향 → 여백</strong> 순서로 고쳐요. 가장 좁은 화면이 제일 많이 깨지기 때문이에요.</p>\n<p><strong>Step 4 :</strong> Tablet은 마지막에 확인하고, 이상한 부분만 살짝 손봐요.</p>\n<p>Desktop을 다 만들기 전에 Phone부터 손대면, Desktop에서 문구를 바꿀 때마다 Phone을 다시 확인해야 해서 일이 두 배가 돼요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>7. 자주 묻는 질문</b></h3>\n<p><strong>Q. Breakpoint를 꼭 세 개 다 만들어야 하나요?</strong><br />\nA. 최소한 Desktop과 Phone 두 개는 만드는 걸 추천해요. Tablet은 Desktop 디자인이 Stack으로 잘 짜여 있으면 크게 손댈 게 없을 때도 많아요.</p>\n<p><strong>Q. 미리보기에서 화면 크기는 어떻게 바꿔 보나요?</strong><br />\nA. 미리보기 창의 가장자리를 드래그해서 폭을 줄이면 Breakpoint가 바뀌는 순간을 바로 볼 수 있어요. 상단에서 기기 크기를 골라 볼 수도 있어요.</p>\n<p><strong>Q. 휴대폰을 가로로 돌리면 어떻게 되나요?</strong><br />\nA. 가로 너비가 810px보다 좁으면 Phone, 넓으면 Tablet 디자인이 보여요. 기준은 기기 종류가 아니라 <strong>화면 너비</strong>예요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>마무리</b></h3>\n<p>오늘은 Framer 반응형 디자인의 핵심인 Breakpoint를 알아봤어요!</p>\n<ul>\n<li>Breakpoint는 <strong>화면 너비 기준선</strong>이고, 기본은 1200 · 810 · 390이에요.</li>\n<li>Desktop에서 바꾼 건 아래로 전달되고, 작은 화면에서 바꾼 건 그 화면에만 남아요.</li>\n<li>작은 화면에서는 주로 <strong>글자 크기, Stack 방향, Padding</strong>을 바꿔요.</li>\n</ul>\n<p>다음 글에서는 <a href=\"https://youniyoon.tistory.com/6\">6화</a>에서 만든 Hero 섹션을 가지고 <strong>모바일 화면을 직접 다듬는 실습</strong>을 해 볼게요.</p>\n<p>👉 이전 글: <a href=\"https://youniyoon.tistory.com/7\">Framer 초보자가 자주 하는 실수 5가지</a><br />\n👉 함께 보면 좋아요: <a href=\"https://youniyoon.tistory.com/4\">Framer Stack 사용법: 요소를 자동으로 정렬하기</a></p>",
+ "images": [
+  {
+   "alt": "Framer 반응형 디자인 Breakpoint 썸네일",
+   "path": "images/08_thumbnail.png"
+  },
+  {
+   "alt": "Framer 기본 Breakpoint 세 가지: Desktop 1200, Tablet 810, Phone 390",
+   "path": "images/08_three_sizes.png"
+  },
+  {
+   "alt": "Desktop 페이지에 Breakpoint를 추가하는 순서",
+   "path": "images/08_add_breakpoint.png"
+  },
+  {
+   "alt": "Primary에서 바꾼 값은 아래로 전달되고, 작은 화면에서 바꾼 값은 그 화면에만 남는 구조",
+   "path": "images/08_inherit.png"
+  },
+  {
+   "alt": "Tablet과 Phone에서 주로 조정하는 다섯 가지 항목",
+   "path": "images/08_checklist.png"
+  }
+ ]
+}
