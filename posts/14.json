@@ -1,0 +1,35 @@
+{
+ "title": "Framer Variants 사용법: 버튼 상태(기본·Hover·눌림) 만들기",
+ "tags": [
+  "framer",
+  "프레이머",
+  "framer variants",
+  "framer 컴포넌트",
+  "버튼 디자인"
+ ],
+ "schedule": "2026-11-17 (화) 09:00",
+ "category": "Framer 실습",
+ "html": "<p><img data-img=\"images/14_thumbnail.png\" alt=\"Framer Variants 버튼 상태 만들기 썸네일\"></p>\n<p><a href=\"https://youniyoon.tistory.com/13\">지난 글</a>에서 버튼을 컴포넌트로 만들었어요. 그런데 사이트에는 꽉 찬 버튼도 있고, 테두리만 있는 버튼도 있죠. 마우스를 올렸을 때 모양도 따로 정하고 싶고요. 이걸 버튼마다 따로 만들면 컴포넌트를 쓰는 의미가 없어져요.</p>\n<p>이번 글에서는 컴포넌트 하나 안에 여러 모습을 담는 <strong>Variants</strong>를 써서, 버튼의 종류와 상태를 한 번에 만들어 볼게요. 따라 하면 20분 정도 걸려요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>1. Variants는 컴포넌트의 여러 모습이에요</b></h3>\n<p><img data-img=\"images/14_variants.png\" alt=\"Button 컴포넌트 안에 Primary, Hover, Pressed, Outline 네 가지 모습이 들어 있는 구조\"></p>\n<p>Variants는 <strong>한 컴포넌트 안에 들어 있는 여러 버전</strong>이에요. 크게 두 가지 용도로 써요.</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\" data-ke-align=\"alignLeft\" data-ke-style=\"style4\"><tbody><tr><td><b>용도</b></td><td><b>예시</b></td><td><b>바뀌는 방법</b></td></tr><tr><td>상태</td><td>기본, Hover, 눌림</td><td>마우스 동작에 따라 자동으로</td></tr><tr><td>종류</td><td>꽉 찬 버튼, 테두리 버튼</td><td>복사본마다 골라서</td></tr></tbody></table>\n<p><a href=\"https://youniyoon.tistory.com/11\">11화</a>의 Hover 효과는 요소 하나에 넣는 방식이었어요. Variants는 이 상태들을 <strong>컴포넌트 안에 모아 두는 방식</strong>이라, 버튼이 몇 개든 똑같이 반응해요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>2. Hover 상태 추가하기</b></h3>\n<p><img data-img=\"images/14_add_hover.png\" alt=\"컴포넌트 캔버스에서 Primary 아래 + Hover / Pressed로 Hover 상태를 추가하는 화면\"></p>\n<p><strong>Step 1 :</strong> Button 컴포넌트 원본을 열어요. 맨 처음 모습은 <strong>Primary</strong>라는 이름으로 들어 있어요.</p>\n<p><strong>Step 2 :</strong> Primary 아래에 보이는 <strong>+ Hover / Pressed</strong> 칸에서 <strong>Hover</strong>를 눌러요. Primary 아래에 Hover 상태가 하나 더 생겨요.</p>\n<p><strong>Step 3 :</strong> Hover 상태를 선택하고 오른쪽 패널 <strong>Styles</strong>의 <strong>Fill</strong>에서 배경색을 조금 진하게 바꿔요. <strong>Shadows</strong>로 그림자를 살짝 넣어도 좋아요.</p>\n<p><strong>Step 4 :</strong> 미리보기에서 버튼에 마우스를 올려 봐요. 따로 연결하지 않아도 Hover 상태로 바뀌어요.</p>\n<p>같은 방법으로 <strong>Pressed</strong>(누르고 있을 때) 상태도 추가해서 <strong>Opacity</strong>를 <strong>0.8</strong> 정도로 낮춰 줘요.</p>\n<blockquote data-ke-style=\"style3\">\n<p>📌 중요<br />\nHover와 Pressed는 Framer가 마우스 동작에 맞춰 자동으로 바꿔 주는 특별한 상태예요. 이름을 직접 지은 일반 상태는 자동으로 바뀌지 않아요.</p>\n</blockquote>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>3. 테두리 버튼 종류 추가하기</b></h3>\n<p>이번에는 상태가 아니라 <strong>종류</strong>를 하나 더 만들어요.</p>\n<p><strong>Step 1 :</strong> Primary 오른쪽에 보이는 <strong>+ Variant</strong>를 눌러 일반 Variant를 추가해요. 새 Variant의 이름표를 더블클릭해서 <strong>Outline</strong>으로 바꿔요.</p>\n<p><strong>Step 2 :</strong> Outline 상태에서 <strong>Fill</strong>을 지워 배경을 투명하게 하고, <strong>Border</strong>를 1px로 넣은 뒤 글자색을 Primary 배경색으로 바꿔요.</p>\n<p><strong>Step 3 :</strong> 페이지에 놓인 버튼 복사본(Instance)을 선택하고, 오른쪽 패널 <strong>Button</strong> 영역의 <strong>Variant</strong> 칸에서 Outline을 골라요.</p>\n<p>이제 같은 Button 컴포넌트로 꽉 찬 버튼과 테두리 버튼을 골라 쓸 수 있어요. Outline에도 Hover 상태를 하나 만들어 주면 테두리 버튼도 마우스에 반응해요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>4. 바뀌는 느낌 정하기 (Transition)</b></h3>\n<p><img data-img=\"images/14_transition.png\" alt=\"Variant가 바뀔 때 적용되는 Transition 설정\"></p>\n<p>상태가 바뀔 때의 움직임은 <strong>Transition</strong>에서 정해요. 컴포넌트 원본에서 <strong>Primary</strong>의 이름표를 눌러 선택하면, 오른쪽 패널 <strong>Styles</strong> 맨 위에 Transition이 있어요. 누르면 <strong>Instant · Ease · Spring</strong> 세 가지 중에 고를 수 있고, 기본값은 <strong>Spring</strong>이에요.</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\" data-ke-align=\"alignLeft\" data-ke-style=\"style4\"><tbody><tr><td><b>설정</b></td><td><b>추천 값</b></td><td><b>이유</b></td></tr><tr><td>방식</td><td>Spring (기본값 그대로)</td><td>버튼에는 살짝 튀는 느낌이 잘 어울려요</td></tr><tr><td>대신 Ease를 쓴다면</td><td>Time 0.2초</td><td>0.5초가 넘으면 굼떠 보여요</td></tr><tr><td>Instant</td><td>쓰지 않기</td><td>애니메이션 없이 뚝 바뀌어요</td></tr></tbody></table>\n<p><a href=\"https://youniyoon.tistory.com/11\">11화</a>에서 정한 기준과 같아요. 한 사이트 안에서는 버튼끼리 같은 Transition을 쓰는 게 깔끔해요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>5. 응용: 지금 보고 있는 메뉴 굵게 표시하기</b></h3>\n<p><img data-img=\"images/14_nav_active.png\" alt=\"Nav 컴포넌트에 페이지별 Variant를 만들어 현재 메뉴를 굵게 표시하는 예시\"></p>\n<p><a href=\"https://youniyoon.tistory.com/10\">10화</a> 자주 묻는 질문에서 약속한 걸 이제 만들 수 있어요.</p>\n<p><strong>Step 1 :</strong> Nav 컴포넌트 원본을 열고 <strong>+ Variant</strong>로 Variant를 네 개 추가해요. 이름표를 더블클릭해서 Home, About, Work, Contact로 바꿔요.</p>\n<p><strong>Step 2 :</strong> 각 Variant에서 해당 메뉴 글자만 <strong>굵게(Bold)</strong> 하고 색을 진하게 바꿔요.</p>\n<p><strong>Step 3 :</strong> About 페이지의 Nav 복사본을 선택하고 Variant를 <strong>About</strong>으로 골라요. 다른 페이지도 같은 방법으로 맞춰요.</p>\n<p>이렇게 하면 방문자가 지금 어느 페이지에 있는지 메뉴만 보고 바로 알 수 있어요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>6. 자주 묻는 질문</b></h3>\n<p><strong>Q. Hover 상태를 만들었는데 미리보기에서 안 바뀌어요.</strong><br />\nA. <strong>+ Variant</strong>로 일반 Variant를 만들고 이름만 Hover로 지으면 자동으로 바뀌지 않아요. 그 Variant를 지우고, Primary 아래의 <strong>+ Hover / Pressed</strong> 칸에서 Hover를 눌러 다시 만들어 주세요.</p>\n<p><strong>Q. 휴대폰에서도 Hover가 보이나요?</strong><br />\nA. 휴대폰에는 마우스를 올리는 동작이 없어서 Hover는 보이지 않아요. 중요한 정보는 Hover 상태에만 넣지 마세요.</p>\n<p><strong>Q. Variant를 너무 많이 만들어도 괜찮나요?</strong><br />\nA. 버튼이라면 종류 2~3개, 상태 2~3개 정도면 충분해요. 너무 많아지면 고를 때 헷갈리니 꼭 쓰는 것만 남겨 주세요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>마무리</b></h3>\n<p>오늘은 Variants로 버튼의 종류와 상태를 만들어 봤어요!</p>\n<ul>\n<li>Variants는 <strong>컴포넌트 안의 여러 모습</strong>이에요.</li>\n<li><strong>Hover·Pressed</strong>는 마우스 동작에 맞춰 자동으로 바뀌고, 일반 Variant는 복사본마다 골라 써요.</li>\n<li>같은 방법으로 <strong>Nav에 현재 페이지 표시</strong>도 만들 수 있어요.</li>\n</ul>\n<p>다음 글에서는 Variants와 클릭 동작을 합쳐서 <strong>탭과 아코디언</strong>을 직접 만들어 볼게요.</p>\n<p>👉 이전 글: <a href=\"https://youniyoon.tistory.com/13\">Framer 컴포넌트 사용법: 한 번 만들고 계속 쓰기</a><br />\n👉 함께 보면 좋아요: <a href=\"https://youniyoon.tistory.com/11\">Framer Hover·Press 효과로 버튼 반응 만들기</a></p>",
+ "images": [
+  {
+   "alt": "Framer Variants 버튼 상태 만들기 썸네일",
+   "path": "images/14_thumbnail.png"
+  },
+  {
+   "alt": "Button 컴포넌트 안에 Primary, Hover, Pressed, Outline 네 가지 모습이 들어 있는 구조",
+   "path": "images/14_variants.png"
+  },
+  {
+   "alt": "컴포넌트 캔버스에서 Primary 아래 + Hover / Pressed로 Hover 상태를 추가하는 화면",
+   "path": "images/14_add_hover.png"
+  },
+  {
+   "alt": "Variant가 바뀔 때 적용되는 Transition 설정",
+   "path": "images/14_transition.png"
+  },
+  {
+   "alt": "Nav 컴포넌트에 페이지별 Variant를 만들어 현재 메뉴를 굵게 표시하는 예시",
+   "path": "images/14_nav_active.png"
+  }
+ ]
+}

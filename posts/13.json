@@ -1,0 +1,35 @@
+{
+ "title": "Framer 컴포넌트 사용법: 한 번 만들고 계속 쓰기",
+ "tags": [
+  "framer",
+  "프레이머",
+  "framer 컴포넌트",
+  "component",
+  "디자인 시스템"
+ ],
+ "schedule": "2026-11-16 (월) 09:00",
+ "category": "Framer 기초",
+ "html": "<p><img data-img=\"images/13_thumbnail.png\" alt=\"Framer 컴포넌트 사용법 썸네일\"></p>\n<p>사이트를 만들다 보면 같은 버튼을 여기저기 복사해 쓰게 돼요. 그러다 버튼 모서리를 조금 둥글게 바꾸고 싶어지면, 복사해 둔 버튼을 하나하나 찾아다니며 고쳐야 하죠. 저도 처음엔 버튼 열두 개를 손으로 고치다가 두 개를 빠뜨렸어요.</p>\n<p>이번 글에서는 이런 수고를 없애 주는 <strong>컴포넌트(Component)</strong>가 무엇인지, 어떻게 만들고 쓰는지 정리할게요. <a href=\"https://youniyoon.tistory.com/10\">10화</a>에서 메뉴를 컴포넌트로 만들어 봤다면, 오늘은 그 원리를 제대로 이해하는 시간이에요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>1. 컴포넌트는 원본과 복사본이에요</b></h3>\n<p><img data-img=\"images/13_concept.png\" alt=\"원본 컴포넌트 하나를 고치면 여러 페이지의 복사본이 함께 바뀌는 구조\"></p>\n<p>컴포넌트는 <strong>한 번 만들어 두고 여러 곳에 꺼내 쓰는 디자인 조각</strong>이에요. 원본이 하나 있고, 페이지에 놓이는 건 모두 그 원본의 복사본이에요.</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\" data-ke-align=\"alignLeft\" data-ke-style=\"style4\"><tbody><tr><td><b>이름</b></td><td><b>뜻</b></td><td><b>고치면</b></td></tr><tr><td>원본 (Primary)</td><td>컴포넌트를 처음 만든 디자인</td><td>모든 복사본이 함께 바뀌어요</td></tr><tr><td>복사본 (Instance)</td><td>페이지에 꺼내 놓은 컴포넌트</td><td>그 복사본만 바뀌어요</td></tr></tbody></table>\n<p>그래서 버튼 모양을 바꾸고 싶으면 원본 하나만 고치면 돼요. 페이지에 버튼이 몇 개가 있든 한 번에 바뀌어요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>2. 컴포넌트 만들기</b></h3>\n<p><img data-img=\"images/13_create.png\" alt=\"버튼 Stack을 선택하고 Create component로 컴포넌트를 만드는 순서\"></p>\n<p><a href=\"https://youniyoon.tistory.com/6\">6화</a>에서 만든 <strong>시작하기</strong> 버튼을 컴포넌트로 바꿔 볼게요.</p>\n<p><strong>Step 1 :</strong> 캔버스에서 버튼 Stack을 선택해요.</p>\n<p><strong>Step 2 :</strong> 마우스 우클릭 → <strong>Create component</strong>를 눌러요. Mac에서는 단축키 ⌥ + ⌘ + K로도 돼요.</p>\n<p><strong>Step 3 :</strong> <strong>New component</strong> 창이 뜨면 <strong>Button</strong>처럼 알아보기 쉬운 이름을 넣고 <strong>Create</strong>를 눌러요.</p>\n<p>만들고 나면 컴포넌트만 따로 편집하는 화면이 열리고, 화면 위쪽에 <strong>Home › Button</strong>처럼 경로가 보여요. 왼쪽 <strong>Assets</strong> 탭에도 Button이 생겨요. 위쪽 경로의 Home을 누르면 원래 페이지로 돌아가요.</p>\n<blockquote data-ke-style=\"style3\">\n<p>📌 중요<br />\n컴포넌트로 만들 요소는 <a href=\"https://youniyoon.tistory.com/4\">4화</a>에서 배운 Stack으로 먼저 묶어 두세요. 그래야 글자가 길어져도 버튼이 알아서 늘어나요.</p>\n</blockquote>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>3. 다른 곳에 꺼내 쓰기</b></h3>\n<p><strong>Step 1 :</strong> 왼쪽 패널 위쪽의 <strong>Assets</strong> 탭을 열어요.</p>\n<p><strong>Step 2 :</strong> 목록에서 <strong>Button</strong>을 찾아 캔버스로 끌어다 놓아요.</p>\n<p><strong>Step 3 :</strong> 같은 방법으로 다른 섹션, 다른 페이지에도 놓아 봐요.</p>\n<p>이제 버튼 원본을 열어 모서리 값을 바꿔 보세요. 끌어다 놓은 버튼이 전부 함께 바뀌는 걸 볼 수 있어요. 원본은 Assets 탭에서 Button을 더블클릭하거나, 복사본을 선택하고 오른쪽 패널 맨 아래 <strong>Edit component</strong>를 누르면 열려요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>4. 복사본마다 글자만 바꾸기</b></h3>\n<p><img data-img=\"images/13_property.png\" alt=\"원본은 그대로 두고 복사본마다 버튼 글자만 다르게 바꾸는 예시\"></p>\n<p>버튼 모양은 같아도 글자는 \"시작하기\", \"문의하기\", \"더 보기\"처럼 달라야 하죠. 이럴 때는 글자를 <strong>변수(Variable)</strong>로 열어 두면 돼요. 복사본마다 다른 값을 넣을 수 있는 칸이라고 생각하면 쉬워요.</p>\n<p><strong>Step 1 :</strong> 컴포넌트 원본을 열고 버튼 안의 Text를 선택해요.</p>\n<p><strong>Step 2 :</strong> 오른쪽 패널 <strong>Text</strong> 항목에서 <strong>Content</strong> 글자 왼쪽의 작은 동그라미를 누르고 <strong>Create plain text variable</strong>을 골라요.</p>\n<p><strong>Step 3 :</strong> 변수 설정 창이 뜨면 Name을 <strong>Label</strong>로 바꿔요.</p>\n<p><strong>Step 4 :</strong> 페이지로 돌아와 복사본을 선택하면, 오른쪽 패널 아래쪽 <strong>Button</strong> 항목에 <strong>Label</strong> 칸이 생겨 있어요. 여기서 글자만 바꾸면 돼요.</p>\n<p>같은 동그라미는 다른 속성 옆에도 있어서, 필요한 값을 같은 방법으로 변수로 열어 둘 수 있어요. 버튼 하나로 사이트 전체 버튼을 다 만들 수 있게 되는 거죠.</p>\n<blockquote data-ke-style=\"style3\">\n<p>⚠️ 주의<br />\n복사본의 오른쪽 패널에는 색이나 모서리 같은 모양 설정이 나오지 않아요. 모양을 바꾸고 싶으면 <strong>Edit component</strong>로 원본을 열어서 고쳐 주세요. 그래야 모든 복사본이 함께 바뀌어요.</p>\n</blockquote>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>5. 무엇을 컴포넌트로 만들까?</b></h3>\n<p><img data-img=\"images/13_candidates.png\" alt=\"사이트에서 컴포넌트로 만들면 좋은 요소 네 가지\"></p>\n<p>처음부터 전부 컴포넌트로 만들 필요는 없어요. <strong>두 번 이상 쓰는 것</strong>부터 바꾸면 돼요.</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\" data-ke-align=\"alignLeft\" data-ke-style=\"style4\"><tbody><tr><td><b>요소</b></td><td><b>이유</b></td></tr><tr><td>메뉴 (Nav)</td><td>모든 페이지 맨 위에 똑같이 들어가요</td></tr><tr><td>버튼</td><td>사이트 곳곳에 같은 모양으로 쓰여요</td></tr><tr><td>카드</td><td>작업물, 후기처럼 같은 틀이 반복돼요</td></tr><tr><td>푸터 (Footer)</td><td>모든 페이지 맨 아래에 들어가요</td></tr></tbody></table>\n<p>반대로 Hero 제목처럼 한 번만 쓰는 요소는 굳이 컴포넌트로 만들지 않아도 괜찮아요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>6. 자주 묻는 질문</b></h3>\n<p><strong>Q. 복사본 하나만 완전히 다르게 바꾸고 싶어요.</strong><br />\nA. 복사본을 우클릭해서 <strong>Detach instance</strong>를 누르면 원본과 연결이 끊긴 일반 레이어가 돼요. 대신 원본을 고쳐도 더는 따라 바뀌지 않아요.</p>\n<p><strong>Q. <a href=\"https://youniyoon.tistory.com/11\">11화</a>에서 넣은 Hover 효과도 같이 따라오나요?</strong><br />\nA. 네, 원본에 들어 있던 효과는 복사본에도 그대로 들어가요. 다만 상태를 더 자세하게 나누고 싶다면 다음 글의 <strong>Variants</strong>를 쓰는 게 좋아요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>마무리</b></h3>\n<p>오늘은 한 번 만들고 계속 쓰는 컴포넌트를 알아봤어요!</p>\n<ul>\n<li>컴포넌트는 <strong>원본 하나와 여러 복사본</strong>으로 이뤄져요.</li>\n<li>모양은 <strong>원본에서</strong>, 글자처럼 달라져야 하는 건 <strong>변수(Variable)</strong>로 바꿔요.</li>\n<li>메뉴, 버튼, 카드, 푸터처럼 <strong>두 번 이상 쓰는 것</strong>부터 컴포넌트로 만들어요.</li>\n</ul>\n<p>다음 글에서는 컴포넌트 안에 기본·Hover·눌림 같은 상태를 만드는 <strong>Variants</strong>를 알아볼게요.</p>\n<p>👉 이전 글: <a href=\"https://youniyoon.tistory.com/12\">Framer 스크롤 애니메이션: 스크롤할 때 나타나는 효과 넣기</a><br />\n👉 함께 보면 좋아요: <a href=\"https://youniyoon.tistory.com/10\">Framer 페이지 추가와 메뉴(내비게이션) 연결하기</a></p>",
+ "images": [
+  {
+   "alt": "Framer 컴포넌트 사용법 썸네일",
+   "path": "images/13_thumbnail.png"
+  },
+  {
+   "alt": "원본 컴포넌트 하나를 고치면 여러 페이지의 복사본이 함께 바뀌는 구조",
+   "path": "images/13_concept.png"
+  },
+  {
+   "alt": "버튼 Stack을 선택하고 Create component로 컴포넌트를 만드는 순서",
+   "path": "images/13_create.png"
+  },
+  {
+   "alt": "원본은 그대로 두고 복사본마다 버튼 글자만 다르게 바꾸는 예시",
+   "path": "images/13_property.png"
+  },
+  {
+   "alt": "사이트에서 컴포넌트로 만들면 좋은 요소 네 가지",
+   "path": "images/13_candidates.png"
+  }
+ ]
+}
