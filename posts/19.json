@@ -1,0 +1,35 @@
+{
+ "title": "[실습] Framer SEO 설정: 검색에 잘 나오는 사이트 만들기",
+ "tags": [
+  "framer",
+  "프레이머",
+  "framer seo",
+  "검색엔진 최적화",
+  "구글 서치콘솔"
+ ],
+ "schedule": "2026-11-24 (화) 09:00",
+ "category": "Framer 실습",
+ "html": "<p><img data-img=\"images/19_thumbnail.png\" alt=\"Framer SEO 설정 썸네일\"></p>\n<p>사이트를 예쁘게 만들어도 검색해서 들어오는 사람이 없으면 아쉽죠. 이번 글에서는 Framer 사이트가 <strong>구글 검색에 잘 나오도록</strong> 기본 SEO 설정을 하나씩 해 볼게요.</p>\n<p>사이트 제목과 설명, 페이지별 설정, CMS 글의 제목 자동 채우기, 공유 이미지, 그리고 구글 서치콘솔 연결까지 다뤄요. 따라 하면 20분 정도 걸려요. 나도 이 블로그를 운영하면서 제목과 설명 한 줄이 검색 노출에 얼마나 중요한지 실감하고 있어요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>1. Framer가 알아서 해 주는 것</b></h3>\n<p><img data-img=\"images/19_auto.png\" alt=\"Framer가 자동으로 처리하는 SEO 항목과 내가 직접 채워야 하는 항목 비교\"></p>\n<p>Framer 사이트는 공개하는 순간 기본 SEO가 갖춰져요. 공식 도움말 기준으로 아래 항목은 따로 설정하지 않아도 돼요.</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\" data-ke-align=\"alignLeft\" data-ke-style=\"style4\"><tbody><tr><td><b>자동으로 되는 것</b></td><td><b>내가 채워야 하는 것</b></td></tr><tr><td>sitemap.xml 자동 생성·갱신</td><td>사이트 제목·설명</td></tr><tr><td>robots.txt 자동 생성</td><td>페이지별 제목·설명</td></tr><tr><td>이미지 최적화</td><td>이미지 대체텍스트(alt)</td></tr><tr><td></td><td>공유 이미지, 서치콘솔 연결</td></tr></tbody></table>\n<p>결국 우리가 할 일은 <strong>검색 결과에 보일 글자와 이미지</strong>를 잘 채워 주는 거예요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>2. 사이트 전체 제목·설명 정하기</b></h3>\n<p><strong>Step 1 :</strong> 에디터에서 프로젝트 <strong>Site Settings</strong>를 열어요.</p>\n<p><strong>Step 2 :</strong> <strong>Site title</strong>에 사이트 이름을, <strong>Site description</strong>에 사이트를 한두 문장으로 소개하는 글을 적어요.</p>\n<p><strong>Step 3 :</strong> 저장한 뒤 사이트를 다시 공개(Publish)해요.</p>\n<p>이 값은 따로 정하지 않은 모든 페이지에 기본으로 들어가요. 설명은 \"윤이의 UI 디자인 포트폴리오. 앱·웹 작업과 디자인 과정을 소개해요.\"처럼 <strong>무엇을 하는 사이트인지</strong> 바로 알 수 있게 쓰는 게 좋아요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>3. 페이지마다 제목·설명 따로 쓰기</b></h3>\n<p><img data-img=\"images/19_page_settings.png\" alt=\"Page Settings에서 Title, Page Description, 검색 노출 여부를 정하는 화면\"></p>\n<p>About, Work처럼 내용이 다른 페이지는 제목과 설명도 따로 주는 게 좋아요.</p>\n<p><strong>Step 1 :</strong> 프로젝트 설정 왼쪽 패널의 <strong>Page Settings</strong>에서 페이지를 골라요.</p>\n<p><strong>Step 2 :</strong> <strong>Title</strong>과 <strong>Page Description</strong>을 입력해요.</p>\n<p><strong>Step 3 :</strong> <strong>Save</strong>를 누르고 다시 공개해요.</p>\n<p>같은 화면에서 이 페이지를 <strong>검색 엔진이나 사이트 검색에 보일지</strong>도 정할 수 있어요. 연습용 페이지나 감사 페이지처럼 검색에 나올 필요 없는 페이지는 여기서 꺼 두세요.</p>\n<blockquote data-ke-style=\"style3\">\n<p>📌 중요<br />\n페이지 주소(경로)에는 밑줄(_) 대신 <strong>하이픈(-)</strong>을 써요. 예) /my_work 대신 /my-work</p>\n</blockquote>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>4. CMS 글은 제목을 자동으로 채우기</b></h3>\n<p><img data-img=\"images/19_cms_meta.png\" alt=\"CMS 페이지 설정에서 {{Title}}과 {{Description}} 변수로 글마다 다른 제목을 넣는 구조\"></p>\n<p><a href=\"https://youniyoon.tistory.com/20\">17화</a>에서 만든 블로그 상세 페이지는 하나지만 글은 여러 개예요. 글마다 제목을 손으로 쓸 수는 없으니 <strong>CMS 필드를 변수로</strong> 넣어요.</p>\n<p><strong>Step 1 :</strong> Blog 컬렉션에 설명용 <strong>Plain Text</strong> 필드(예: Description)를 추가하고 글마다 채워요.</p>\n<p><strong>Step 2 :</strong> CMS 상세 페이지의 <strong>Page Settings</strong>를 열어요.</p>\n<p><strong>Step 3 :</strong> <strong>Title</strong> 칸에 <code>{{Title}}</code>, <strong>Page description</strong> 칸에 <code>{{Description}}</code>을 입력해요.</p>\n<p><code>{{Title}} – Blog</code>처럼 고정 글자와 섞어 쓸 수도 있어요. 이제 글마다 검색 결과에 자기 제목과 설명이 보여요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>5. 공유 이미지(소셜 미리보기) 넣기</b></h3>\n<p>카카오톡이나 슬랙에 주소를 붙여 넣으면 뜨는 미리보기 이미지도 정할 수 있어요. CMS 글이라면 Page Settings의 <strong>Page images → Social preview</strong>에서 <strong>CMS Variables</strong>를 고르고 Cover 이미지 필드를 연결하면 글마다 다른 이미지가 나와요.</p>\n<blockquote data-ke-style=\"style3\">\n<p>⚠️ 주의<br />\nFramer의 공유 이미지 비율은 <strong>1200 × 630</strong>이에요. 중요한 글자는 가운데에 두세요. 이미지를 바꿨는데도 예전 이미지가 보이면 각 서비스의 캐시 때문이니 조금 기다려 보세요.</p>\n</blockquote>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>6. 구글 서치콘솔 연결하기</b></h3>\n<p><img data-img=\"images/19_gsc.png\" alt=\"구글 서치콘솔 메타 태그를 Framer 설정의 head 끝에 붙여 넣고 sitemap.xml을 제출하는 순서\"></p>\n<p>구글이 내 사이트를 잘 찾아오게 하려면 <strong>구글 서치콘솔</strong>에 사이트를 등록해요.</p>\n<p><strong>Step 1 :</strong> 구글 서치콘솔에서 <strong>URL 접두어</strong>를 고르고 <code>https://</code>를 포함한 내 사이트 주소를 넣어요.</p>\n<p><strong>Step 2 :</strong> 확인 방법 중 <strong>HTML 태그(메타 태그)</strong>를 골라 태그를 복사해요. Framer에는 HTML 파일을 올릴 수 없어서 이 방법을 써요.</p>\n<p><strong>Step 3 :</strong> Framer 사이트 설정의 <strong>General</strong>에서 <code>&lt;head&gt;</code> 입력칸 맨 끝에 태그를 붙여 넣고 저장한 뒤 다시 공개해요.</p>\n<p><strong>Step 4 :</strong> 서치콘솔로 돌아와 <strong>확인</strong>을 눌러요.</p>\n<p><strong>Step 5 :</strong> 왼쪽 <strong>Sitemaps</strong> 메뉴에 <code>sitemap.xml</code>을 입력하고 제출해요. 내 주소 뒤에 /sitemap.xml을 붙이면 직접 열어 볼 수도 있어요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>7. 공개 전 SEO 체크리스트</b></h3>\n<ul>\n<li>사이트 제목·설명을 채웠나요?</li>\n<li>주요 페이지마다 제목·설명이 다른가요?</li>\n<li>페이지마다 큰 제목(H1)이 하나 있나요?</li>\n<li>모든 이미지에 <strong>대체텍스트(alt)</strong>를 넣었나요? 키워드를 억지로 넣지 말고 이미지를 그대로 설명해요.</li>\n<li>주소를 바꾼 페이지가 있으면 <strong>리디렉트</strong>를 걸었나요? (Pro 요금제부터 가능해요)</li>\n</ul>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>마무리</b></h3>\n<p>오늘은 Framer 사이트의 기본 SEO 설정을 해 봤어요!</p>\n<ul>\n<li>sitemap.xml과 robots.txt는 Framer가 <strong>자동으로</strong> 만들어요.</li>\n<li><strong>Site Settings</strong>에서 사이트 제목·설명, <strong>Page Settings</strong>에서 페이지별 제목·설명을 정해요.</li>\n<li>CMS 글은 <code>{{Title}}</code>, <code>{{Description}}</code> 변수로 글마다 자동으로 채워요.</li>\n<li>구글 서치콘솔은 <strong>메타 태그</strong>로 확인하고 sitemap.xml을 제출해요.</li>\n</ul>\n<p>다음 글에서는 드디어 사이트를 <strong>공개(Publish)하고 내 도메인을 연결</strong>해 볼게요.</p>\n<p>👉 이전 글: <a href=\"{18화 링크}\">Framer AI(Agent) 사용법: 프롬프트로 디자인 빠르게 시작하기</a><br />\n👉 함께 보면 좋아요: <a href=\"https://youniyoon.tistory.com/20\">[실습] Framer CMS로 블로그 목록·상세 페이지 만들기</a></p>",
+ "images": [
+  {
+   "alt": "Framer SEO 설정 썸네일",
+   "path": "images/19_thumbnail.png"
+  },
+  {
+   "alt": "Framer가 자동으로 처리하는 SEO 항목과 내가 직접 채워야 하는 항목 비교",
+   "path": "images/19_auto.png"
+  },
+  {
+   "alt": "Page Settings에서 Title, Page Description, 검색 노출 여부를 정하는 화면",
+   "path": "images/19_page_settings.png"
+  },
+  {
+   "alt": "CMS 페이지 설정에서 {{Title}}과 {{Description}} 변수로 글마다 다른 제목을 넣는 구조",
+   "path": "images/19_cms_meta.png"
+  },
+  {
+   "alt": "구글 서치콘솔 메타 태그를 Framer 설정의 head 끝에 붙여 넣고 sitemap.xml을 제출하는 순서",
+   "path": "images/19_gsc.png"
+  }
+ ]
+}

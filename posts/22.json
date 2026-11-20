@@ -1,0 +1,31 @@
+{
+ "title": "Framer vs Webflow vs Wix 비교: 나에게 맞는 노코드 웹사이트 빌더는?",
+ "tags": [
+  "framer",
+  "프레이머",
+  "framer webflow 비교",
+  "wix",
+  "노코드 웹사이트"
+ ],
+ "schedule": "2026-11-27 (금) 09:00",
+ "category": "Framer 팁",
+ "html": "<p><img data-img=\"images/22_thumbnail.png\" alt=\"Framer vs Webflow vs Wix 비교 썸네일\"></p>\n<p>노코드로 웹사이트를 만든다고 하면 Framer 말고도 <strong>Webflow</strong>와 <strong>Wix</strong>가 자주 함께 나와요. 세 도구 모두 코드 없이 사이트를 만들고 공개까지 할 수 있지만, 잘하는 일과 맞는 사람이 조금씩 달라요.</p>\n<p>이번 글에서는 세 도구를 <strong>작업 방식, 배우기 난이도, 요금, 잘 맞는 사람</strong> 기준으로 비교해 볼게요. 이 강좌를 21편까지 따라온 입장에서 Framer를 계속 쓸지, 다른 도구가 더 맞을지 판단하는 데 도움이 되면 좋겠어요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>1. 한 줄로 정리하면</b></h3>\n<p><img data-img=\"images/22_overview.png\" alt=\"Framer, Webflow, Wix 세 도구의 성격을 한 줄로 비교한 그림\"></p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\" data-ke-align=\"alignLeft\" data-ke-style=\"style4\"><tbody><tr><td><b>도구</b></td><td><b>한 줄 정리</b></td></tr><tr><td>Framer</td><td>디자인 툴처럼 캔버스에서 그리면 바로 사이트가 되는 도구</td></tr><tr><td>Webflow</td><td>웹의 구조(HTML·CSS)를 눈으로 보며 세밀하게 다루는 도구</td></tr><tr><td>Wix</td><td>템플릿을 고르고 끌어다 놓아 빠르게 사이트를 여는 도구</td></tr></tbody></table>\n<p>세 도구 모두 호스팅이 포함되어 있고, 최근에는 AI로 사이트 초안을 만드는 기능도 다 갖추고 있어요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>2. 작업 방식 비교</b></h3>\n<p><strong>Framer</strong>는 Figma 같은 디자인 툴과 화면이 비슷해요. <a href=\"https://youniyoon.tistory.com/4\">4화</a>에서 배운 Stack, <a href=\"https://youniyoon.tistory.com/8\">8화</a>의 Breakpoint처럼 디자이너에게 익숙한 방식으로 레이아웃을 잡아요. 인터랙션과 애니메이션을 넣기 쉬운 것도 장점이에요.</p>\n<p><strong>Webflow</strong>는 웹 페이지의 실제 구조를 그대로 다루는 편이에요. 요소마다 클래스를 붙여 스타일을 관리하기 때문에 처음엔 낯설지만, 익숙해지면 아주 세밀하게 조정할 수 있어요. 웹 퍼블리싱을 조금 아는 사람에게 잘 맞아요.</p>\n<p><strong>Wix</strong>는 2,000개가 넘는 템플릿 중 하나를 골라 끌어다 놓기로 고치는 방식이에요. 온라인 쇼핑몰, 예약, 결제 같은 <strong>사업용 기능</strong>이 처음부터 많이 들어 있어요. 에이전시나 디자이너용으로는 따로 <strong>Wix Studio</strong>가 있어요.</p>\n<blockquote data-ke-style=\"style3\">\n<p>📌 중요<br />\n디자인을 직접 만들고 싶다면 Framer나 Webflow, 디자인보다 <strong>가게 운영 기능</strong>이 중요하다면 Wix가 편해요.</p>\n</blockquote>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>3. 배우기 난이도</b></h3>\n<p><img data-img=\"images/22_learning.png\" alt=\"세 도구의 배우기 난이도와 디자인 자유도를 비교한 그래프\"></p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\" data-ke-align=\"alignLeft\" data-ke-style=\"style4\"><tbody><tr><td><b>항목</b></td><td><b>Framer</b></td><td><b>Webflow</b></td><td><b>Wix</b></td></tr><tr><td>처음 시작</td><td>쉬움</td><td>어려움</td><td>가장 쉬움</td></tr><tr><td>디자인 자유도</td><td>높음</td><td>매우 높음</td><td>보통</td></tr><tr><td>애니메이션</td><td>쉬움</td><td>강력하지만 복잡</td><td>기본 효과 위주</td></tr><tr><td>사업용 기능</td><td>기본</td><td>기본</td><td>많음</td></tr></tbody></table>\n<p>디자인 툴을 써 본 적이 있다면 Framer가 가장 빨리 손에 익어요. 이 강좌를 따라왔다면 이미 Framer 기본기는 갖춘 셈이에요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>4. 요금 비교</b></h3>\n<p><img data-img=\"images/22_pricing.png\" alt=\"Framer, Webflow, Wix의 무료·기본·다음 단계 요금 비교표\"></p>\n<p>각 공식 요금 페이지 기준이에요. 모두 <strong>연간 결제 기준 월 요금(USD)</strong>이고, 지역에 따라 다를 수 있어요. (2026-11-20 확인)</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\" data-ke-align=\"alignLeft\" data-ke-style=\"style4\"><tbody><tr><td><b>구분</b></td><td><b>Framer</b></td><td><b>Webflow</b></td><td><b>Wix</b></td></tr><tr><td>무료</td><td>Free $0</td><td>Starter $0</td><td>Free $0</td></tr><tr><td>내 도메인 + 기본</td><td>Basic $10</td><td>Basic $15</td><td>Light $17</td></tr><tr><td>CMS 포함 다음 단계</td><td>Pro $30</td><td>Premium $25</td><td>Core $29</td></tr></tbody></table>\n<ul>\n<li><strong>Framer</strong> Basic부터 내 도메인과 CMS(컬렉션 2개)를 함께 쓸 수 있어요. 자세한 내용은 <a href=\"{21화 링크}\">21화</a>에 정리했어요.</li>\n<li><strong>Webflow</strong> Basic은 CMS가 필요 없는 단순한 사이트용이고, CMS는 Premium부터 들어가요.</li>\n<li><strong>Wix</strong>는 무료로 사이트를 만들 수 있지만, 내 도메인을 연결하고 Wix 광고 표시를 없애려면 유료 플랜이 필요해요. 결제·쇼핑몰 기능은 Core부터 들어가요.</li>\n</ul>\n<blockquote data-ke-style=\"style3\">\n<p>⚠️ 주의<br />\n요금과 포함 기능은 세 회사 모두 자주 바꿔요. 결제 전에는 꼭 각 공식 요금 페이지를 다시 확인해 주세요.</p>\n</blockquote>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>5. 나에게 맞는 도구 고르기</b></h3>\n<p><strong>Framer가 잘 맞는 사람</strong><br />\n- 디자이너, 디자인 툴에 익숙한 사람<br />\n- 포트폴리오, 랜딩 페이지, 스타트업 소개 사이트를 만들고 싶은 사람<br />\n- 움직임이 있는 세련된 사이트를 빠르게 만들고 싶은 사람</p>\n<p><strong>Webflow가 잘 맞는 사람</strong><br />\n- HTML·CSS 구조를 어느 정도 알고, 아주 세밀하게 조정하고 싶은 사람<br />\n- 콘텐츠가 많은 큰 사이트를 체계적으로 관리해야 하는 팀</p>\n<p><strong>Wix가 잘 맞는 사람</strong><br />\n- 디자인보다 <strong>빨리 여는 것</strong>이 중요한 사람<br />\n- 온라인 쇼핑몰, 예약, 결제가 필요한 가게나 소규모 사업자</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>6. 이 강좌를 마치며</b></h3>\n<p>나는 디자이너라서 Framer가 가장 편했어요. 그림 그리듯 화면을 만들면 그게 바로 사이트가 된다는 점이 가장 큰 매력이었어요. 여기에 <a href=\"{18화 링크}\">18화</a>에서 본 Agent까지 더해져서, 혼자서도 사이트 하나를 처음부터 끝까지 만들 수 있게 됐어요.</p>\n<p>어떤 도구를 고르든 레이아웃, 반응형, 컴포넌트, CMS라는 기본 개념은 똑같아요. 이 강좌에서 배운 내용은 다른 도구로 옮겨 가도 그대로 쓸 수 있어요.</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<p data-ke-size=\"size16\">&nbsp;</p>\n<h3><b>마무리</b></h3>\n<p>오늘은 Framer, Webflow, Wix를 비교해 봤어요!</p>\n<ul>\n<li><strong>Framer</strong> : 디자인 툴처럼 만들고, 애니메이션과 포트폴리오에 강해요.</li>\n<li><strong>Webflow</strong> : 웹 구조를 세밀하게 다루고, 큰 콘텐츠 사이트에 강해요.</li>\n<li><strong>Wix</strong> : 템플릿으로 빠르게 열고, 쇼핑몰·예약 같은 사업 기능에 강해요.</li>\n</ul>\n<p>Framer 입문 강좌는 여기까지예요. 지금까지 함께해 주셔서 고마워요!</p>\n<p>👉 이전 글: <a href=\"{21화 링크}\">Framer 요금제 정리: 무료로 어디까지 되고 언제 유료가 필요할까?</a><br />\n👉 처음부터 보기: <a href=\"https://youniyoon.tistory.com/1\">Framer란? 무엇을 만들 수 있고 Figma와 뭐가 다를까</a></p>",
+ "images": [
+  {
+   "alt": "Framer vs Webflow vs Wix 비교 썸네일",
+   "path": "images/22_thumbnail.png"
+  },
+  {
+   "alt": "Framer, Webflow, Wix 세 도구의 성격을 한 줄로 비교한 그림",
+   "path": "images/22_overview.png"
+  },
+  {
+   "alt": "세 도구의 배우기 난이도와 디자인 자유도를 비교한 그래프",
+   "path": "images/22_learning.png"
+  },
+  {
+   "alt": "Framer, Webflow, Wix의 무료·기본·다음 단계 요금 비교표",
+   "path": "images/22_pricing.png"
+  }
+ ]
+}
